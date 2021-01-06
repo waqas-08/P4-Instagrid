@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJo-N4-xqE">
+                                <rect key="frame" x="64" y="318" width="300" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yhz-bk-TN5">
+                                        <rect key="frame" x="0.0" y="100" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yhz-bk-TN5" secondAttribute="height" multiplier="1:1" id="C57-bp-byV"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="C57-bp-byV"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="C57-bp-byV"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagrid" translatesAutoresizingMaskIntoConstraints="NO" id="PtT-L8-7HS">
+                                        <rect key="frame" x="49.666666666666686" y="225" width="201" height="52"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.73519676919999999" green="0.89254218340000002" blue="0.98824983840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="centerX" secondItem="lJo-N4-xqE" secondAttribute="centerX" id="0iU-ev-DAk"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="height" secondItem="lJo-N4-xqE" secondAttribute="height" multiplier="0.333333" id="1yX-G9-Xnh"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="centerY" secondItem="lJo-N4-xqE" secondAttribute="centerY" id="B5J-QT-tVR"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="width" secondItem="lJo-N4-xqE" secondAttribute="width" multiplier="0.333333" id="DxZ-3B-Qlw"/>
+                                    <constraint firstAttribute="width" secondItem="lJo-N4-xqE" secondAttribute="height" multiplier="1:1" id="FiT-2Q-Hwe"/>
+                                    <constraint firstItem="PtT-L8-7HS" firstAttribute="top" secondItem="Yhz-bk-TN5" secondAttribute="bottom" constant="25" id="K4S-LX-AxG"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="centerX" secondItem="lJo-N4-xqE" secondAttribute="centerX" id="KAr-Kx-Ghx"/>
+                                    <constraint firstItem="PtT-L8-7HS" firstAttribute="width" secondItem="lJo-N4-xqE" secondAttribute="width" multiplier="0.67" id="L0C-vf-hfJ"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="centerY" secondItem="lJo-N4-xqE" secondAttribute="centerY" id="TKn-d3-pP9"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="width" secondItem="lJo-N4-xqE" secondAttribute="height" multiplier="1:3" id="VyS-dC-zsx"/>
+                                    <constraint firstItem="PtT-L8-7HS" firstAttribute="height" secondItem="lJo-N4-xqE" secondAttribute="height" multiplier="0.173333" id="luQ-DJ-nrw"/>
+                                    <constraint firstItem="Yhz-bk-TN5" firstAttribute="width" secondItem="lJo-N4-xqE" secondAttribute="height" multiplier="1:1" id="njB-aW-cyz"/>
+                                    <constraint firstItem="PtT-L8-7HS" firstAttribute="centerX" secondItem="Yhz-bk-TN5" secondAttribute="centerX" id="sCY-K5-KyL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DxZ-3B-Qlw"/>
+                                        <exclude reference="KAr-Kx-Ghx"/>
+                                        <exclude reference="TKn-d3-pP9"/>
+                                        <exclude reference="VyS-dC-zsx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="FiT-2Q-Hwe"/>
+                                        <exclude reference="0iU-ev-DAk"/>
+                                        <exclude reference="1yX-G9-Xnh"/>
+                                        <exclude reference="B5J-QT-tVR"/>
+                                        <include reference="DxZ-3B-Qlw"/>
+                                        <include reference="KAr-Kx-Ghx"/>
+                                        <include reference="TKn-d3-pP9"/>
+                                        <exclude reference="VyS-dC-zsx"/>
+                                        <exclude reference="njB-aW-cyz"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.73519676919999999" green="0.89254218340000002" blue="0.98824983840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Uz-QQ-cvf"/>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="75:107" id="H0n-fz-CT2"/>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.700935" id="Nc4-PP-uhx"/>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.323974" id="WjX-pX-rYP"/>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZWU-gK-EsA"/>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lTr-V9-Bwc"/>
+                            <constraint firstItem="lJo-N4-xqE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wRM-Oo-Sgw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H0n-fz-CT2"/>
+                                <exclude reference="Nc4-PP-uhx"/>
+                                <exclude reference="ZWU-gK-EsA"/>
+                                <exclude reference="lTr-V9-Bwc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="2Uz-QQ-cvf"/>
+                                <include reference="H0n-fz-CT2"/>
+                                <include reference="Nc4-PP-uhx"/>
+                                <exclude reference="WjX-pX-rYP"/>
+                                <include reference="ZWU-gK-EsA"/>
+                                <include reference="lTr-V9-Bwc"/>
+                                <exclude reference="wRM-Oo-Sgw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.835853131749467" y="374.29906542056074"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="60" height="60"/>
+        <image name="Instagrid" width="41.333332061767578" height="13"/>
+    </resources>
+</document>
